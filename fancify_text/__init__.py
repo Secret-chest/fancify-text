@@ -45,7 +45,7 @@ def fancify(input_text, style):
     if len(font) == 26:
         input_text = input_text.upper()
 
-    if style == "reverse" or style == "upside-down":
+    if style == "reverse" or style == "upsidedown":
         input_text = ''.join(reversed(input_text))
 
     # Conversion.
@@ -65,7 +65,7 @@ def fancify(input_text, style):
             if character == " ":
                 output_text += " "  # Extra space for spaces
             output_text += " "
-            
+
     return output_text
 
 
