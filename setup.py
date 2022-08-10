@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="fancify-text",
-    version="0.1.1",
+    version="0.1.2",
     author="Robin Winslow",
     author_email="robin@robinwinslow.co.uk",
     url="https://github.com/nottrobin/fancify-text",

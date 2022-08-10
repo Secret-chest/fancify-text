@@ -18,7 +18,7 @@ Convert text into a fancier unicode representation, picking from the following f
 - smallcaps: ʜᴇʟʟᴏ ᴡᴏʀʟᴅ
 - handwriting2: ᕼEᒪᒪO ᗯOᖇᒪᗪ
 - reverse: ᗡ⅃ЯOW O⅃⅃ƎH
-- upsidedown: ɥǝllo ʍoɹlp
+- upsidedown: plɹoʍ ollǝɥ
 - wiry: 卄乇ㄥㄥㄖ 山ㄖ尺ㄥᗪ
 - script: 𝒽𝑒𝓁𝓁𝓅 𝓍𝓅𝓈𝓁𝒹
 - outline: 𝕙𝕖𝕝𝕝𝕠 𝕨𝕠𝕣𝕝𝕕
