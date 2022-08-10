@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install system dependencies
+      run: sudo apt update && sudo apt install -y --no-install-recommends python3-setuptools python3-wheel
+
+    - name: Build package
+      run: python3 setup.py sdist
+
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@37f50c210e3d2f9450da2cd423303d6a14a6e29f
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_TOKEN }}
