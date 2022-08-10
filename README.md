@@ -1,5 +1,7 @@
 # Fancify text
 
+_(Code copied and modified from @secret-chest's https://github.com/Secret-chest/fancy-text)_
+
 Convert text into a fancier unicode representation, picking from the following fonts:
 
 - bold: 𝗵𝗲𝗹𝗹𝗼 𝘄𝗼𝗿𝗹𝗱
