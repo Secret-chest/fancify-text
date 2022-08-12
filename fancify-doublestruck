@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import handwriting
+from fancify_text import doubleStruck
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode handwriting'
+        description='Convert text to unicode double-struck outlined font'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make handwriting'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(handwriting(**args))
+    print(doubleStruck(**args))
 
 
 if __name__ == '__main__':

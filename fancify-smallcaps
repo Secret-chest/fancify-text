@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import smallcaps
+from fancify_text import smallCaps
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode smallcaps'
+        description='Convert text to unicode small caps'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make smallcaps'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(smallcaps(**args))
+    print(smallCaps(**args))
 
 
 if __name__ == '__main__':

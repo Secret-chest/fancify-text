@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import script
+from fancify_text import sansSerif
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode script'
+        description='Convert text to unicode sans serif'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make script'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(script(**args))
+    print(sansSerif(**args))
 
 
 if __name__ == '__main__':

@@ -9,12 +9,12 @@ from fancify_text import circled
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode circled'
+        description='Convert text to unicode circled font'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make circled'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())

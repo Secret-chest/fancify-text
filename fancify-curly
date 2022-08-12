@@ -9,12 +9,12 @@ from fancify_text import curly
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode curly'
+        description='Convert text to unicode curly font'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make curly'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())

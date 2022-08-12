@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import strange
+from fancify_text import boldFraktur
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode strange'
+        description='Convert text to unicode bold fraktur font'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make strange'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(strange(**args))
+    print(boldFraktur(**args))
 
 
 if __name__ == '__main__':

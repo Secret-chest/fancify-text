@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import magic2
+from fancify_text import currency
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode magic2'
+        description='Convert text to unicode currency symbols'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make magic2'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(magic2(**args))
+    print(currency(**args))
 
 
 if __name__ == '__main__':

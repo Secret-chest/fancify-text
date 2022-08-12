@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import upsidedown
+from fancify_text import upsideDown
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode upsidedown'
+        description='Convert text to unicode reversed'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make upsidedown'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(upsidedown(**args))
+    print(upsideDown(**args))
 
 
 if __name__ == '__main__':

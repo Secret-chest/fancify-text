@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import typewriter
+from fancify_text import reversed_
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode typewriter'
+        description='Convert text to unicode reversed'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make typewriter'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(typewriter(**args))
+    print(reversed_(**args))
 
 
 if __name__ == '__main__':

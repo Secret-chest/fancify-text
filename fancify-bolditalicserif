@@ -4,12 +4,12 @@
 import argparse
 
 # Local
-from fancify_text import magic
+from fancify_text import boldItalicSerif
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode cool writing'
+        description='Convert text to unicode bold italic serif font'
     )
 
     parser.add_argument(
@@ -19,7 +19,7 @@ def main():
 
     args = vars(parser.parse_args())
 
-    print(magic(**args))
+    print(boldItalicSerif(**args))
 
 
 if __name__ == '__main__':

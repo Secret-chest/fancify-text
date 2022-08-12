@@ -4,22 +4,22 @@
 import argparse
 
 # Local
-from fancify_text import handwriting2
+from fancify_text import heavyCircled
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert text to unicode handwriting2'
+        description='Convert text to unicode heavy circled'
     )
 
     parser.add_argument(
         "input_text",
-        help='The text to make handwriting2'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
 
-    print(handwriting2(**args))
+    print(heavyCircled(**args))
 
 
 if __name__ == '__main__':

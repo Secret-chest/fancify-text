@@ -14,7 +14,7 @@ def main():
 
     parser.add_argument(
         "input_text",
-        help='The text to make bold'
+        help='The text to convert'
     )
 
     args = vars(parser.parse_args())
