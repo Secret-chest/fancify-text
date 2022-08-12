@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="fancify-text",
-    version="0.2.1",
+    version="0.2.2",
     author="Secret-chest",
     url="https://github.com/Secret-chest/fancify-text",
     description=(
@@ -16,7 +16,7 @@ setup(
     packages=["fancify_text"],
     install_requires=[],
     scripts=[
-        "fancify-circled", "fancify-curly", "fancify-wiry", "fancify_text", "fancify-bolditalicserif","fancify-italicserif", "fancify-boxed", "fancify-squared", "fancify-wide",
+        "fancify-circled", "fancify-curly", "fancify-wiry", "fancify-bolditalicserif","fancify-italicserif", "fancify-boxed", "fancify-squared", "fancify-wide",
         "fancify-parenthesized", "fancify-cursive", "fancify-bold", "fancify-reversed", "fancify-upsidedown", "fancify-doublehelix",
         "fancify-blue", "fancify-boldfraktur", "fancify-bolditalic", "fancify-italic",
         "fancify-smallcaps", "fancify-currency", "fancify-monospaced", "fancify-boldserif",

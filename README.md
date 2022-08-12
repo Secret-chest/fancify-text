@@ -1,4 +1,4 @@
-# fancify-text (v0.2)
+# fancify-text
 
 _(Thanks to @nottrobin for the original library)_
 
