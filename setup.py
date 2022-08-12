@@ -5,11 +5,11 @@ from setuptools import setup
 
 setup(
     name="fancify-text",
-    version="0.2.0",
+    version="0.2.1",
     author="Secret-chest",
     url="https://github.com/Secret-chest/fancify-text",
     description=(
-        "Convert text to one of 27 fancy unicode representations"
+        "Convert text to one of 28 fancy unicode representations"
     ),
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
