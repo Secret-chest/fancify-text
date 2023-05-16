@@ -1,4 +1,6 @@
-from fancify_text.fontData import fonts, modifiers
+from .fontData import fonts, modifiers
+
+__all__ = ['fancify', 'fonts', 'modifiers', 'reversed_', 'upsideDown']
 
 
 def fancify(inputText, style):
@@ -35,79 +37,16 @@ def fancify(inputText, style):
     return outputText
 
 
-# Functions for command-line usage.
+# Register functions and add to globals
 
+funcs = {font: eval(f"lambda input_text: fancify(input_text, {repr(font)})") \
+                for font in fonts if font not in ["reversed", "upsideDown"]}
+globals().update(funcs)
 
-def sansSerif(input_text):
-    return fancify(input_text, "sansSerif")
+# Add function names to __all__
+__all__ += list(funcs)
 
-
-def bold(input_text):
-    return fancify(input_text, "bold")
-
-
-def italic(input_text):
-    return fancify(input_text, "italic")
-
-
-def boldItalic(input_text):
-    return fancify(input_text, "boldItalic")
-
-
-def monospaced(input_text):
-    return fancify(input_text, "monospaced")
-
-
-def wide(input_text):
-    return fancify(input_text, "wide")
-
-
-def boldSerif(input_text):
-    return fancify(input_text, "boldSerif")
-
-
-def italicSerif(input_text):
-    return fancify(input_text, "italicSerif")
-
-
-def boldItalicSerif(input_text):
-    return fancify(input_text, "boldItalicSerif")
-
-
-def doubleStruck(input_text):
-    return fancify(input_text, "doubleStruck")
-
-
-def script(input_text):
-    return fancify(input_text, "script")
-
-
-def fraktur(input_text):
-    return fancify(input_text, "fraktur")
-
-
-def boldFraktur(input_text):
-    return fancify(input_text, "boldFraktur")
-
-
-def blue(input_text):
-    return fancify(input_text, "blue")
-
-
-def squared(input_text):
-    return fancify(input_text, "squared")
-
-
-def circled(input_text):
-    return fancify(input_text, "circled")
-
-
-def smallCaps(input_text):
-    return fancify(input_text, "smallCaps")
-
-
-def curly(input_text):
-    return fancify(input_text, "curly")
+# Other functions
 
 
 def reversed_(input_text):
@@ -116,31 +55,3 @@ def reversed_(input_text):
 
 def upsideDown(input_text):
     return "".join(reversed(fancify(input_text, "upsideDown")))
-
-
-def boxed(input_text):
-    return fancify(input_text, "boxed")
-
-
-def wiry(input_text):
-    return fancify(input_text, "wiry")
-
-
-def parenthesized(input_text):
-    return fancify(input_text, "parenthesized")
-
-
-def heavyCircled(input_text):
-    return fancify(input_text, "heavyCircled")
-
-
-def currency(input_text):
-    return fancify(input_text, "currency")
-
-
-def cool(input_text):
-    return fancify(input_text, "cool")
-
-
-def magic(input_text):
-    return fancify(input_text, "magic")
