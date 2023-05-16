@@ -11,7 +11,7 @@ setup(
     description=(
         "Convert text to one of 27 fancy unicode representations"
     ),
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="utf8").read(),
     long_description_content_type="text/markdown",
     packages=["fancify_text"],
     install_requires=[],
