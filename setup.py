@@ -15,13 +15,9 @@ setup(
     long_description_content_type="text/markdown",
     packages=["fancify_text"],
     install_requires=[],
-    scripts=[
-        "fancify-circled", "fancify-curly", "fancify-wiry", "fancify-bolditalicserif", "fancify-italicserif",
-        "fancify-boxed", "fancify-squared", "fancify-wide", "fancify-parenthesized", "fancify-cursive",
-        "fancify-bold", "fancify-reversed", "fancify-upsidedown",
-        "fancify-blue", "fancify-boldfraktur", "fancify-bolditalic", "fancify-italic",
-        "fancify-smallcaps", "fancify-currency", "fancify-monospaced", "fancify-boldserif",
-        "fancify-sansserif", "fancify-cool", "fancify-doublestruck", "fancify-magic", "fancify-heavycircled",
-        "fancify-fraktur"
-    ],
+    entry_points = {
+        'console_scripts': [
+            'fancify = fancify_text.cli:fancify_cmd'
+        ]
+    },
 )
