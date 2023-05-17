@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="fancify-text",
-    version="0.2.3",
+    version="0.2.4",
     author="Secret-chest",
     url="https://github.com/Secret-chest/fancify-text",
     description=(
