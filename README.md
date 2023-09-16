@@ -59,14 +59,48 @@ Hᴇʟʟᴏ Wᴏʀʟᴅ
 ### From CLI
 
 ``` bash
-$ fancify-bold "hello world"  # type the font name in all lowercase!
+$ fancify bold "hello world"  # type the font with keeping uppercase letters!
 𝗵𝗲𝗹𝗹𝗼 𝘄𝗼𝗿𝗹𝗱
-$ fancify-reversed "hello world"
+$ fancify reversed "hello world"
 ᗡ⅃ЯOW O⅃⅃ƎH
-$ fancify-heavycircled "hello world"
+$ fancify heavyCircled "hello world"
 🅗🅔🅛🅛🅞 🅦🅞🅡🅛🅓
-$ fancify-smallcaps "hello world"
+$ fancify smallCaps "hello world"
 Hᴇʟʟᴏ Wᴏʀʟᴅ
+```
+
+You can also use `all` to print text in all available fonts:
+
+``` bash
+$ fancify all "hello world"
+sansSerif - 𝗁𝖾𝗅𝗅𝗈 𝗐𝗈𝗋𝗅𝖽
+bold - 𝗵𝗲𝗹𝗹𝗼 𝘄𝗼𝗿𝗹𝗱
+italic - 𝘩𝘦𝘭𝘭𝘰 𝘸𝘰𝘳𝘭𝘥
+boldItalic - 𝙝𝙚𝙡𝙡𝙤 𝙬𝙤𝙧𝙡𝙙
+boldSerif - 𝐡𝐞𝐥𝐥𝐨 𝐰𝐨𝐫𝐥𝐝
+italicSerif - 𝒉𝑒𝑙𝑙𝑜 𝑤𝑜𝑟𝑙𝑑
+boldItalicSerif - 𝒉𝒆𝒍𝒍𝒐 𝒘𝒐𝒓𝒍𝒅
+doubleStruck - 𝕙𝕖𝕝𝕝𝕠 𝕨𝕠𝕣𝕝𝕕
+monospaced - 𝚑𝚎𝚕𝚕𝚘 𝚠𝚘𝚛𝚕𝚍
+wide - ｈｅｌｌｏ ｗｏｒｌｄ
+fraktur - 𝔥𝔢𝔩𝔩𝔬 𝔴𝔬𝔯𝔩𝔡
+boldFraktur - 𝖍𝖊𝖑𝖑𝖔 𝖜𝖔𝖗𝖑𝖉
+script - 𝓱𝓮𝓵𝓵𝓸 𝔀𝓸𝓻𝓵𝓭
+smallCaps - ʜᴇʟʟᴏ ᴡᴏʀʟᴅ
+squared - 🄷🄴🄻🄻🄾 🅆🄾🅁🄻🄳
+circled - ⓗⓔⓛⓛⓞ ⓦⓞⓡⓛⓓ
+parenthesized - ⒣⒠⒧⒧⒪ ⒲⒪⒭⒧⒟
+boxed - 🅷🅴🅻🅻🅾 🆆🅾🆁🅻🅳
+blue - 🇭​🇪​🇱​🇱​🇴​ ​🇼​🇴​🇷​🇱​🇩​
+heavyCircled - 🅗🅔🅛🅛🅞 🅦🅞🅡🅛🅓
+curly - ɧɛƖƖơ ῳơཞƖɖ
+currency - H€££O ₩OR£₫
+cool - ᕼEᒪᒪO ᗯOᖇᒪᗪ
+magic - ԋҽʅʅσ ɯσɾʅԃ
+wiry - 卄乇ㄥㄥㄖ 山ㄖ尺ㄥᗪ
+reversed_ - ᗡ⅃ЯOW O⅃⅃ƎH
+upsideDown - pןɹoʍ oןןǝɥ
+superscript - ʰᵉˡˡᵒ ʷᵒʳˡᵈ
 ```
 
 TODO: support modifiers from fontData.py
