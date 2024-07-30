@@ -1,3 +1,5 @@
+#### This hasn't been moved to roundabout-host -- yet; it will be kept for now.
+
 # fancify-text
 
 _(Thanks to @nottrobin for the original library)_
